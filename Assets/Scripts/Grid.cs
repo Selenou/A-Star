@@ -19,6 +19,12 @@ public class Grid : MonoBehaviour {
 		this.CreateGrid();
 	}
 
+	public int MaxSize {
+		get {
+			return this.numberOfCells.x * this.numberOfCells.y;
+		}
+	}
+
 	void CreateGrid() {
 		this.grid = new Node[this.numberOfCells.x, this.numberOfCells.y];
 
